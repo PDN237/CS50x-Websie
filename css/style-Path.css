@@ -1,0 +1,621 @@
+/* ===========================================
+   🎨 CS50x LEARNING PATH STYLESHEET
+   =========================================== */
+
+/* ===========================================
+   📐 FOUNDATION & RESET
+   =========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #111827;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===========================================
+   🧭 NAVIGATION & HEADER
+   =========================================== */
+
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-logo h1 {
+    color: #A51C30;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu li a {
+    color: #111827;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #A51C30;
+}
+
+.nav-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-social .social-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-social .social-link:hover {
+    color: #8B1626;
+}
+
+/* ===========================================
+   🌟 HERO SECTION
+   =========================================== */
+
+.hero {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #111827;
+    font-weight: 700;
+}
+
+.hero .subtitle {
+    font-size: 1.2rem;
+    color: #374151;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.hero .description {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    background: linear-gradient(135deg, #E5E7EB 0%, #D1D5DB 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(165, 28, 48, 0.1);
+}
+
+
+
+/* ===========================================
+   📚 WEEKS DETAIL
+   =========================================== */
+
+.weeks-detail {
+    background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+    padding: 4rem 0;
+}
+
+.weeks-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.week-card {
+    background: linear-gradient(135deg, #FFFFFF 0%, #FAFAFA 100%);
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(165, 28, 48, 0.08);
+    margin-bottom: 0.5rem;
+}
+
+.week-card h3 {
+    color: #A51C30;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.week-toggle {
+    background: none;
+    border: none;
+    color: #A51C30;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 1.5rem;
+}
+
+.week-details, .week-content {
+    display: flex;
+    gap: 2rem;
+}
+
+.week-details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.week-details.expanded {
+    opacity: 1;
+    max-height: 1000px;
+    overflow: auto;
+}
+
+.learn, .do {
+    flex: 1;
+}
+
+.learn ul, .do ul {
+    margin-top: 0.5rem;
+}
+
+.learn li, .do li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.learn li:before, .do li:before {
+    content: "•";
+    color: #A51C30;
+    position: absolute;
+    left: 0;
+}
+
+/* ===========================================
+   🖼️ IMAGES SECTION
+   =========================================== */
+
+.images-section {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    padding: 4rem 0;
+}
+
+.images-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.side-images {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+/* ===========================================
+   🔤 ENGLISH LANGUAGE SECTION
+   =========================================== */
+
+.english-section {
+    background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+    padding: 4rem 0;
+}
+
+.english-section .container {
+}
+
+.english-section h2 {
+    color: #A51C30;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.english-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.english-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.english-content ul {
+    text-align: left;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+.english-content li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.english-content li:before {
+    content: "•";
+    color: #A51C30;
+    position: absolute;
+    left: 0;
+}
+
+.answer {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #A51C30;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    font-weight: 600;
+    color: #A51C30;
+    margin: 0.5rem 0;
+}
+
+/* ===========================================
+   💪 MOTIVATION & MESSAGES
+   =========================================== */
+
+.motivation-section {
+    background-color: #F8FAFC;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.motivation-section h2 {
+    color: #A51C30;
+    margin-bottom: 2rem;
+}
+
+.motivation-message {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #374151;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.final-message {
+    background-color: #FFFFFF;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.final-message .message {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #A51C30;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===========================================
+   📞 CALL-TO-ACTION & FORMS
+   =========================================== */
+
+.cta {
+    background-color: #F8FAFC;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #A51C30;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #8B1626;
+}
+
+.cta-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+}   
+
+.consultation-form {
+    background-color: #F8FAFC;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.consultation-form h2 {
+    color: #A51C30;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.form {
+    max-width: 20000px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+    .form-row {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .form-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .form-group {
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 500;
+        color: #374151;
+        font-size: 1.2rem;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="tel"],
+    .form-group input[type="email"],
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 1rem;
+        border: 1px solid #D1D5DB;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        background-color: #FFFFFF;
+    }
+
+    .form-group input[type="text"]:focus,
+    .form-group input[type="tel"]:focus,
+    .form-group input[type="email"]:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #A51C30;
+    }
+
+    .form-group select {
+        cursor: pointer;
+    }
+
+    .form-group select[multiple] {
+        height: 100px;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+
+    .submit-btn {
+        background-color: #A51C30;
+        color: #FFFFFF;
+        padding: 1.25rem 2.5rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        cursor: pointer;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .submit-btn:hover {
+        background-color: #8B1626;
+    }
+
+/* Footer Styles */
+.footer {
+    background-color: #FFFFFF;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    color: #A51C30;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #8B1626;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social .social-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.footer-social .social-link:hover {
+    color: #8B1626;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 1rem;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+/* ===========================================
+   📱 RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-social {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .timeline {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .weeks-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .week-content {
+        flex-direction: column;
+    }
+
+    .offline-content {
+        grid-template-columns: 1fr;
+    }
+
+    .offline-map {
+        grid-column: span 1;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .gallery-images img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .cta-button {
+        display: block;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+
+    .form {
+        padding: 1.5rem;
+    }
+
+    .consultation-form {
+        padding: 3rem 0;
+    }
+}

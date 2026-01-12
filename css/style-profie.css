@@ -1,0 +1,494 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #111827;
+    background-color: #FFFFFF;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #A51C30;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #374151;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Header Styles */
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-logo h1 {
+    color: #A51C30;
+    font-size: 1.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-menu li a {
+    color: #111827;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: #A51C30;
+}
+
+.nav-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-social .social-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-social .social-link:hover {
+    color: #8B1626;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 2.5rem 0 4rem 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+
+
+.hero-text {
+    
+    max-width: 600px;
+    text-align: center;
+}
+
+.role {
+    font-size: 1.25rem;
+    color: #A51C30;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-style: italic;
+    color: #374151;
+}
+
+.cv-link {
+    margin-top: 1rem;
+}
+
+.cv-link a {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.cv-link a:hover {
+    color: #8B1626;
+}
+
+/* Story Section */
+.story {
+    background-color: #F8FAFC;
+    padding: 4rem 0;
+}
+
+.story .container {
+    max-width: 800px;
+}
+
+/* Certifications Section */
+.certifications {
+    background-color: #FFFFFF;
+    padding: 4rem 0;
+}
+
+.certifications .container {
+    text-align: center;
+}
+
+.cert-cards-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.cert-card {
+    background-color: #F8FAFC;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #A51C30;
+    flex: 1 1 300px;
+    max-width: 380px;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    background-color: #F0F4F8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Skills Section */
+.skills {
+    background-color: #F8FAFC;
+    padding: 4rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background-color: #FFFFFF;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #E5E7EB;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background-color: #F8FAFC;
+    border-color: #A51C30;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Experience Section */
+.experience {
+    background-color: #FFFFFF;
+    padding: 4rem 0;
+}
+
+.experience-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.experience-list {
+    flex: 2;
+}
+
+.experience-item {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+    margin-bottom: 2rem;
+}
+
+.experience-text {
+    flex: 1;
+    max-width: 60%;
+}
+
+.experience-image {
+flex: 1;
+   width: 200px;
+   height: 250px;
+   border-radius: 8px;
+   margin-top: 8px;
+   flex-shrink: 0;
+   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #A51C30;
+}
+
+.experience-item p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+.experience-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Philosophy Section */
+.philosophy {
+    background-color: #F8FAFC;
+    padding: 4rem 0;
+}
+
+.philosophy-quote {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #E5E7EB;
+}
+
+.philosophy-quote p {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/* Audience Section */
+.audience {
+    background-color: #FFFFFF;
+    padding: 4rem 0;
+}
+
+.audience-columns {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.audience-column {
+    flex: 1;
+    max-width: 400px;
+}
+
+/* CTA Section */
+.cta {
+    background-color: #F8FAFC;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #A51C30;
+    color: #FFFFFF;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-right: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #8B1626;
+}
+
+.cta-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #FFFFFF;
+    padding: 3rem 0 2rem;
+    border-top: 1px solid #E5E7EB;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-section h3 {
+    color: #A51C30;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #8B1626;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-social .social-link {
+    color: #A51C30;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.footer-social .social-link:hover {
+    color: #8B1626;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #E5E7EB;
+    padding-top: 1rem;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-social {
+        justify-content: center;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cert-list {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-image {
+        max-width: 150px;
+        height: 120px;
+        margin: 0 auto;
+    }
+
+    .cta-button {
+        display: block;
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+}
