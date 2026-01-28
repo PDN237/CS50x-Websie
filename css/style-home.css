@@ -199,6 +199,8 @@ li {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
+    position: relative;
+    left: 50px;
     gap: 4rem;
 }
 
@@ -235,7 +237,7 @@ li {
 }
 
 .btn-primary {
-    background-color: #E64B3C;
+    background-color: #A51C30;
     color: #ffffff;
     padding: 0.9rem 1.6rem;
     border-radius: 8px;
@@ -245,13 +247,13 @@ li {
 }
 
 .btn-primary:hover {
-    background-color: #c93c2f;
+    background-color: #8B1626;
 }
 
 .btn-secondary {
     background-color: transparent;
-    color: #E64B3C;
-    border: 2px solid #E64B3C;
+    color: #A51C30;
+    border: 2px solid #A51C30;
     padding: 0.9rem 1.6rem;
     border-radius: 8px;
     font-weight: 600;
@@ -260,7 +262,7 @@ li {
 }
 
 .btn-secondary:hover {
-    background-color: #E64B3C;
+    background-color: #A51C30;
     color: #ffffff;
 }
 
@@ -270,7 +272,7 @@ li {
     border-radius: 20px;
     overflow: hidden;
     max-width: 360px;
-    max-height: 400px;
+    max-height: 330px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
 
     display: flex;
@@ -385,7 +387,7 @@ li {
 
 .path-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -412,9 +414,12 @@ li {
 }
 
 .path-card h3 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.3;
     margin-bottom: 0.5rem;
     color: #A51C30;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 
